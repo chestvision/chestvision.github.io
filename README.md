@@ -82,10 +82,39 @@ Follow these simple steps to get started with ChestVision AI:
 
 ## 🛠️ Technologies Used
 
-- **TensorFlow.js** for ML model deployment, enabling real-time AI inference directly in the browser.
-- **Particles.js** for stunning, interactive background animations that enhance user experience.
-- **AOS** (Animate On Scroll) library for smooth and engaging scroll-based animations.
-- **Modern CSS** techniques such as **Flexbox**, **Grid**, and **Glassmorphism** for a sleek, responsive design.
+### **TensorFlow.js** - Real-Time AI Model Deployment
+- **TensorFlow.js** powers the machine learning models deployed directly in the browser. This allows **ChestVision AI** to perform **real-time predictions** and inference, without needing to send sensitive medical data to external servers. The entire process happens on the user's device, ensuring **data privacy** and **speed**.
+- The **Multi-Disease Detection Model** was trained by **Bach** using a **complex residual network**, enabling the model to accurately predict **14 different chest-related conditions** from X-ray images. The training process took **3.68 hours** using the **ChestX-ray14 Dataset**, with a total of **78,468 images** for training, **11,218 images** for validation, and **22,432 images** for testing.
+
+### **Particles.js** - Interactive Background Animations
+- To elevate the user experience, **Particles.js** adds stunning, interactive particle animations in the background. This dynamic and engaging effect helps guide the user’s focus toward the central content while creating a more immersive environment for image analysis.
+- The interactive design responds to user actions such as scrolling and mouse movements, adding an element of fun and delight to the otherwise clinical environment of a medical app.
+
+### **AOS (Animate On Scroll)** - Smooth Scroll Animations
+- The **AOS library** is utilized to add smooth and captivating scroll-based animations. These animations trigger as the user scrolls down the page, adding a layer of engagement while also making the interface feel more fluid.
+- Whether it's fading in the content, sliding in elements from the side, or other animations, **AOS** ensures the experience remains fresh and visually appealing as users explore the platform.
+
+### **Modern CSS Techniques** - Responsive and Elegant Design
+- **Flexbox** and **CSS Grid** were used extensively in the layout to ensure a **responsive**, **flexible**, and **user-friendly interface**. These powerful layout systems ensure that the platform adapts perfectly to any screen size, whether on a mobile, tablet, or desktop.
+- **Glassmorphism** was incorporated to create a sleek, **frosted-glass** effect, adding modern aesthetics and enhancing visual clarity. This effect uses translucent backgrounds with subtle blur effects to keep the focus on the content while giving the platform a futuristic look.
+  
+### Model-Specific Details:
+
+#### **Multi-Disease Detection Model** (14 conditions)
+- **Training Time**: 3.68 hours
+- **Network Architecture**: Complex residual network designed for accurate feature extraction from chest X-ray images.
+- **Dataset**: **ChestX-ray14 Dataset**  
+  - **Training Set**: 78,468 images
+  - **Validation Set**: 11,218 images
+  - **Testing Set**: 22,432 images
+- **Supported Conditions**: This model detects 14 chest conditions including **Atelectasis**, **Cardiomegaly**, **Effusion**, and more.
+
+#### **Pneumonia Detection Model** (Binary classification)
+- **Training Time**: 22 minutes
+- **Network Architecture**: **DenseNet-121**, a highly efficient convolutional neural network (CNN) known for its excellent performance in medical imaging tasks.
+- **Dataset**: **Kaggle Chest X-ray dataset**  
+  - **Training Set**: 5,863 images
+- **Output**: The model classifies X-ray images into **Pneumonia** or **Non-Pneumonia** categories, providing a quick diagnosis for suspected pneumonia cases.
 
 ---
 
