@@ -31,7 +31,7 @@ ChestVision AI is a state-of-the-art web application that leverages deep learnin
 
 ### Supported Conditions
 
-js
+Js
    
     ```const detectedConditions = [
       "Atelectasis", "Cardiomegaly", "Effusion", 
@@ -39,8 +39,8 @@ js
       "Pneumonia", "Pneumothorax", "Consolidation",
       "Edema", "Emphysema", "Fibrosis", 
       "Pleural Thickening", "Hernia"
-  ]
-  '''
+      ]
+      '''
 ## Get Started
 
 1. Clone the repository:
