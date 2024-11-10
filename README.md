@@ -32,6 +32,7 @@ ChestVision AI is a state-of-the-art web application that leverages deep learnin
 ### Supported Conditions
 
 js
+   
     ```const detectedConditions = [
       "Atelectasis", "Cardiomegaly", "Effusion", 
       "Infiltration", "Mass", "Nodule", 
