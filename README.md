@@ -80,41 +80,53 @@ Follow these simple steps to get started with ChestVision AI:
 
 ---
 
-## 🛠️ Technologies Used
+## 🛠️ **Technologies Used** 🔧
 
-### **TensorFlow.js** - Real-Time AI Model Deployment
-- **TensorFlow.js** powers the machine learning models deployed directly in the browser. This allows **ChestVision AI** to perform **real-time predictions** and inference, without needing to send sensitive medical data to external servers. The entire process happens on the user's device, ensuring **data privacy** and **speed**.
-- The **Multi-Disease Detection Model** was trained by **Bach** using a **complex residual network**, enabling the model to accurately predict **14 different chest-related conditions** from X-ray images. The training process took **3.68 hours** using the **ChestX-ray14 Dataset**, with a total of **78,468 images** for training, **11,218 images** for validation, and **22,432 images** for testing.
+### **TensorFlow.js** - 🧠 Real-Time AI Model Deployment
+- **TensorFlow.js** powers the machine learning models deployed **directly in the browser**, enabling **real-time AI inference**. This means your data never leaves your device, ensuring **privacy** and **speed**.
+- The **Multi-Disease Detection Model** was trained by **Bach** using a **complex residual network** that predicts **14 different chest-related conditions** from X-ray images. Here's a breakdown:
+  - **Training Time**: ⏱️ **3.68 hours**
+  - **Network Architecture**: 🧬 **Residual Network** for efficient feature extraction.
+  - **Dataset**: 🖼️ **ChestX-ray14 Dataset**
+    - **Training Set**: 78,468 images
+    - **Validation Set**: 11,218 images
+    - **Testing Set**: 22,432 images
+- This model is able to detect conditions like **Atelectasis**, **Cardiomegaly**, **Effusion**, and more!
 
-### **Particles.js** - Interactive Background Animations
-- To elevate the user experience, **Particles.js** adds stunning, interactive particle animations in the background. This dynamic and engaging effect helps guide the user’s focus toward the central content while creating a more immersive environment for image analysis.
-- The interactive design responds to user actions such as scrolling and mouse movements, adding an element of fun and delight to the otherwise clinical environment of a medical app.
+### **Particles.js** - ✨ Interactive Background Animations
+- **Particles.js** creates stunning and **interactive particle effects** in the background. These beautiful animations enhance the overall **user experience** by responding to scroll and mouse movements.
+- With **Particles.js**, the background remains lively and dynamic, engaging users without distracting from the core content.
 
-### **AOS (Animate On Scroll)** - Smooth Scroll Animations
-- The **AOS library** is utilized to add smooth and captivating scroll-based animations. These animations trigger as the user scrolls down the page, adding a layer of engagement while also making the interface feel more fluid.
-- Whether it's fading in the content, sliding in elements from the side, or other animations, **AOS** ensures the experience remains fresh and visually appealing as users explore the platform.
+### **AOS (Animate On Scroll)** - 🌀 Smooth Scroll Animations
+- **AOS** adds smooth, engaging animations that trigger when the user scrolls through the page. This helps keep the **user interface** dynamic, making the app feel more fluid and interactive.
+- Whether it’s **fade-ins**, **slide-ins**, or **zoom effects**, AOS ensures a captivating user experience that highlights important content as users scroll.
 
-### **Modern CSS Techniques** - Responsive and Elegant Design
-- **Flexbox** and **CSS Grid** were used extensively in the layout to ensure a **responsive**, **flexible**, and **user-friendly interface**. These powerful layout systems ensure that the platform adapts perfectly to any screen size, whether on a mobile, tablet, or desktop.
-- **Glassmorphism** was incorporated to create a sleek, **frosted-glass** effect, adding modern aesthetics and enhancing visual clarity. This effect uses translucent backgrounds with subtle blur effects to keep the focus on the content while giving the platform a futuristic look.
-  
-### Model-Specific Details:
+### **Modern CSS Techniques** - 🎨 Sleek & Responsive Design
+- **Flexbox** and **CSS Grid** were employed to create a **flexible** and **responsive layout**, ensuring the app looks great on all screen sizes, from mobile to desktop.
+- **Glassmorphism** adds a **frosted-glass** effect, making the design feel modern and sophisticated with translucent backgrounds and soft blur effects.
+- Together, these technologies provide a **clean**, **minimalistic**, and **intuitive** design that’s easy to navigate.
 
-#### **Multi-Disease Detection Model** (14 conditions)
-- **Training Time**: 3.68 hours
-- **Network Architecture**: Complex residual network designed for accurate feature extraction from chest X-ray images.
-- **Dataset**: **ChestX-ray14 Dataset**  
+---
+
+### 💡 **Model-Specific Details:**
+
+#### **Multi-Disease Detection Model** (14 Conditions) 🏥
+- **Training Time**: ⏱️ **3.68 hours**
+- **Network Architecture**: 🧬 **Residual Network** - A complex deep learning architecture optimized for high accuracy.
+- **Dataset**: 🖼️ **ChestX-ray14 Dataset**
   - **Training Set**: 78,468 images
   - **Validation Set**: 11,218 images
   - **Testing Set**: 22,432 images
-- **Supported Conditions**: This model detects 14 chest conditions including **Atelectasis**, **Cardiomegaly**, **Effusion**, and more.
-
-#### **Pneumonia Detection Model** (Binary classification)
-- **Training Time**: 22 minutes
-- **Network Architecture**: **DenseNet-121**, a highly efficient convolutional neural network (CNN) known for its excellent performance in medical imaging tasks.
-- **Dataset**: **Kaggle Chest X-ray dataset**  
-  - **Training Set**: 5,863 images
-- **Output**: The model classifies X-ray images into **Pneumonia** or **Non-Pneumonia** categories, providing a quick diagnosis for suspected pneumonia cases.
+- **Supported Conditions**:  
+  This model can detect a range of chest-related diseases such as:
+  - **Atelectasis**, **Cardiomegaly**, **Effusion**, **Mass**, **Nodule**, and more!
+  
+#### **Pneumonia Detection Model** (Binary Classification) 🫁
+- **Training Time**: ⏱️ **22 minutes**
+- **Network Architecture**: **DenseNet-121** 💥 - A highly efficient and advanced deep learning network optimized for medical imaging.
+- **Dataset**: 🖼️ **Kaggle Chest X-ray Dataset**
+  - **Training Set**: 5,863 images of chest X-rays labeled as **Pneumonia** or **Non-Pneumonia**.
+- **Output**: This model provides a **Pneumonia vs. Non-Pneumonia** classification for X-ray images, offering a quick diagnosis for suspected cases.
 
 ---
 
